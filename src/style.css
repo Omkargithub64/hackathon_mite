@@ -1,0 +1,519 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    overflow: hidden;
+}
+.background{
+    position: absolute;
+    backdrop-filter: blur(150px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.main_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+}
+
+/* login page */
+.login_wrapper{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+.login_main_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    color: white;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.106);
+    backdrop-filter: blur(50px);
+    padding: 2rem;
+    margin: 0% auto;
+    width: 30rem;
+    /* height: 30rem; */
+    border-radius: 1rem;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.login_form{
+    display: flex;
+    flex-direction: column;
+}
+.input_label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.input_input{
+    border: none;
+    background: rgba(255, 255, 255, 0.409);
+    height: 2.7rem;
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 0.4rem;
+    padding: 0rem 1rem;
+}
+
+.btn{
+    margin: 1rem 0rem;
+    background: rgba(255, 255, 255, 0.822);
+    padding: 1rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+    /* color: white; */
+}
+
+.btn:hover{
+
+    background: rgb(255, 255, 255);
+}
+
+.act_btn{
+    background: rgb(255, 255, 255);
+    
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.terms{
+    color: rgba(255, 255, 255, 0.44);
+    margin-bottom: 2rem;
+}
+
+.signup_wrapper{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.line_break{
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.194);
+    margin-bottom: 1rem;
+}
+.title_2{
+    text-align: center;
+}
+.main_title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top:2rem;
+    left: 50%;
+    transform: translate(-50%,-10%);
+}
+
+header{
+    /* height: 3rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.183);
+    backdrop-filter: blur(50px);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.logo{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: white;
+
+}
+.cat{
+    color: white;
+}
+.nav_link{
+    font-size: 1.3rem;
+    margin: 0rem 1rem;
+    color: rgba(255, 255, 255, 0.56);
+    transition: all 0.2s;
+    text-decoration: none;
+}
+.nav_link:hover{
+    color: white;
+    text-decoration: underline;
+}
+.te{
+    border: none;
+    width: 20rem;
+    background-color: white;
+    padding: 0.6rem;
+    border-radius: 10rem;
+
+}
+.profile{
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid white;
+    border-radius: 40rem;
+    overflow: hidden;
+}
+
+.profile img{
+    object-fit: cover;
+    width: 3rem;
+    height: 3rem;
+}
+
+.main_home_container{
+    /* height: 200vh; */
+    width: 100%;
+}
+.home_slider{
+    width: 50%;
+    height: 600px;
+    margin: auto;
+    margin-top: 10rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+.images{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.imagess{
+    display: block;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.categories{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.card_container{
+    background: rgba(255, 255, 255, 0.183);
+    backdrop-filter: blur(50px);
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bg_image_blur{
+
+    background: rgba(255, 255, 255, 0.183);
+    backdrop-filter: blur(10px);
+}
+.card_title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.profile_container{
+    width: auto;
+    background: rgba(255, 255, 255, 0.183);
+    backdrop-filter: blur(50px);
+    padding: 4rem;
+    border-radius: 2rem;
+    margin: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.profile_pic{
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 50rem;
+    margin: 5rem 5rem 5rem 0rem;
+}
+
+.pic{
+    object-fit: cover;
+    width: 20rem;
+    height: 20rem;
+    
+}
+
+.profile_details{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.email{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.677);
+    margin: 0.2rem 0rem;
+}
+.edit{
+    background: white;
+    padding: 1rem;
+    width: fit-content;
+    margin: 1rem 0rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 10rem;
+}
+.edit:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.cardss_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.pcard{
+    background: rgba(255, 255, 255, 0.183);
+    backdrop-filter: blur(50px);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    transition: all 0.03s;
+    color: rgba(255, 255, 255, 0.646);
+    margin: 1rem;
+}
+.pcard:hover{
+    background: rgba(255, 255, 255, 0.183);
+    backdrop-filter: blur(0px);
+    padding: 3rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.153);
+    color: rgb(255, 255, 255);
+}
+.texxt{
+    font-size: 2rem;
+}
+
+.logout{
+    background: rgb(210, 39, 79);
+}
+
+
+.cards_cont{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.carddd{
+    margin: 2rem;
+    background: rgba(255, 255, 255, 0.183);
+    backdrop-filter: blur(50px);
+    padding: 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cardimage{
+    width: 20rem;
+    
+}
+.pcard_title{
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+    margin: 1rem 0rem;
+}
+.product_review{
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.366);
+}
+.product_price{
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+    margin: 1rem 0rem;
+}
+.contt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_detrails{
+    display: flex;
+    flex-direction: column;
+}
+.pdescription{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.565);
+    margin-bottom: 1rem;
+}
+.ratings{
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.879);
+}
+
+.price{
+    margin: 2rem 0rem;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.879);
+}
+
+.size_cont{
+    display: flex;
+    
+
+}
+.c{
+color: white;
+font-size: 2rem;
+}
+.activee{
+    background-color: white;
+    color: black;
+    
+}
+.size{
+    margin: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid white;
+    border-radius: 50rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.add{
+    display: flex;
+    margin: 2rem;
+    align-items: start;
+    justify-content: start;
+}
+.a{
+    cursor: pointer;
+    margin: 0rem 1rem;
+    background: white;
+    padding: 1.5rem 3rem;
+    border-radius: 0.4rem;
+    
+}
+.pd_title{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 800;
+    margin: 1.4rem 0rem;
+}
+.pd_sub{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.691);
+    font-weight: 100;
+    margin: 1rem 0rem;
+
+}
+
+.bl{
+    border: 5px solid rgb(0, 0, 0);
+    color: black;
+}
+.y{
+    border: 5px solid rgb(255, 217, 0);
+    color: black;
+}
+.r{
+    border: 5px solid rgb(231, 14, 47);
+    color: black;
+}
+
+.bottom{
+    background: rgba(0, 0, 0, 0.183);
+    backdrop-filter: blur(50px);
+    padding: 2rem;
+    color: white;
+}
+p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p a{
+    color: white;
+    font-size: 1rem;
+}
+
+.ico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+svg{
+    color: white;
+    background: white;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 0.2rem;
+
+}
+.links{
+    display: flex;
+    color: white;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:700px) {
+    .login_main_content{
+        width: 80%;
+    }
+}
+
